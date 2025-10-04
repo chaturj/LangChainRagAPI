@@ -1,0 +1,55 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red24\green26\blue30;\red244\green246\blue249;\red0\green0\blue0;
+}
+{\*\expandedcolortbl;;\cssrgb\c12157\c13725\c15686;\cssrgb\c96471\c97255\c98039;\cssrgb\c0\c0\c0;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww19080\viewh10180\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs22 \cf2 \cb3 \expnd0\expndtw0\kerning0
+Project : LangChainRag\cf0 \cb1 \
+\
+\
+
+\f1\fs24 \cf2 \cb3 pip install --q unstructured langchain
+\f0\fs22 \
+\cf0 \cb1 \
+
+\f1\fs24 \cf2 \cb3 pip install\'a0 -- 'unstructured[all-docs]'
+\f0\fs22 \
+\cf0 \cb1 \
+
+\f1\fs24 \cf2 \cb3 python3 -m venv .venv
+\f0\fs22 \
+\cf0 \cb1 \
+
+\f1\fs24 \cf2 \cb3 source .venv/bin/activate
+\f0\fs22 \
+\cf0 \cb1 \
+
+\f1\fs24 \cf2 \cb3 pip install streamlit
+\f0\fs22 \
+\cf0 \cb1 \
+
+\f1\fs24 \cf2 \cb3 pip install watchdog\cb1 \
+\
+\cb3 ollama pull nomic-embed-text\cb1 \
+\
+\cb3 ollama pull mistral\
+\cb1 \
+\cb3 pip install --q chromadb\
+\cb1 \
+\cb3 pip install --q langchain-text-splitters\
+\cb1 \
+\cb3 pip install langchain-community\cb1 \
+\
+\cb3 pip install langchain langchain-core langchain-community\cb1 \
+\
+\cb3 pip install langchain-text-splitters\cb1 \
+\
+\
+\cb3 pip install "fastapi[all]\'94 uvicorn\cb1 \
+\
+\cb3 uvicorn main:app --host 0.0.0.0 --port 8000}
