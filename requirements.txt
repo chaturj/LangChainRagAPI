@@ -1,2 +1,2 @@
-pip install -- unstructured langchain
-pip install -- 'unstructured[all-docs]'
+pip install unstructured langchain
+pip install 'unstructured[all-docs]'
